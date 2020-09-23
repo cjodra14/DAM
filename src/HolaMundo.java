@@ -6,7 +6,7 @@ public class HolaMundo {
 		byte edad=4;
 		
 		//Prueba de un Hola Mundo 1º DAM
-		System.out.println("Hola Mundo");
+		System.out.  printf("¡Hola, mundo!");
 		System.out.print("Buenas tardes");
 		System.out.println();
 		System.out.println("Prueba con ñ y tildes á é í ó ú");
