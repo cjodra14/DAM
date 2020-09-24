@@ -37,6 +37,16 @@ public class Ejer1 {
 	System.out.println(n7);
 	System.out.println(n);
 		
+//Declarar variable con numeros negativos e introducir valores superiores para prueba
+	//byte n11=130; // Nos recomiendo escribir byte n11=(byte) 130;o cambiar a int
+	short n12=-32768;
+	//int n13=-2147483650; //Indica que esta fuera de rango
+	long n14=-4946512885646L;
+	
+	
+	System.out.print(n12);
+	System.out.print(n14);
+	
 	}
 
 }
