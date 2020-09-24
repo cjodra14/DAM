@@ -75,7 +75,7 @@ public class Ejer1 {
 	int var1=12, var2=15;
 	long var3=76649L, var4=-5624L;
 	float var5=8.493f, var6=23f;
-	char var7='€', var8='d';
+	char var7='ï¿½', var8='d';
 	
 	
 	System.out.println("El valor de la primera variable es: "+var1);
@@ -112,21 +112,34 @@ public class Ejer1 {
 	
 	
 //Ejercicio 11
-	double pesoKG=1d;
+	double pesoKG=2d;
 	final double OZ_AU=400d;
 	final double OZ=32.5d, KG=1d;
 	final double EUR=0.86d, USD=1d;
 	
-	double pesoOZ, precioOZ, precioOZ_EUR;
+	double pesoOZ, precioOZ, precioOZ_EUR, precioTotal;
 	
-	pesoOZ=pesoKG/OZ;
+	pesoOZ=pesoKG*OZ;
 	
 	precioOZ_EUR=OZ_AU*EUR;
+	precioTotal=precioOZ_EUR*pesoOZ;
 	
-	
-	System.out.println("Precio 1kg AU en USD:"+"$");
+	System.out.println("Precio del oro en EUR:"+precioTotal+"â‚¬");
 	System.out.println("Precio onza en EUR"+precioOZ_EUR);
-	System.out.println(pesoOZ);
+	System.out.println(precioTotal);
+	System.out.println();
+	
+//Ejercicio 12
+	float vaso1=0.12f, vaso2=0.18f, vaso3=0.17f, totalLitros;
+	totalLitros=vaso1+vaso2+vaso3;
+	System.out.println("En total hay:"+totalLitros+"litros");
+	
+//Ejercicio 13
+	int pant=30, cami=11, totalPantCami;
+	totalPantCami=(pant*2)+(cami);
+	System.out.println("El total a pagar es:"+totalPantCami);
+	
+	
 	
 	
 	
