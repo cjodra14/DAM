@@ -5,7 +5,7 @@ public class Ejer1 {
 	//Programa que visualiza datos del centro de Estudios: Ceinmark.	
 	public static void main(String[] args) {
 		System.out.println("Ciclo: Desarrollo de Aplicaciones Web");
-		System.out.println("M�dulo: Programaci�n");
+		System.out.println("Modulo: Programacion");
 		System.out.println("Centro: Ceinmark");
 		System.out.println("Calle: Iturribide 22-24-26");
 		System.out.println("Telef: 944157298");
@@ -22,12 +22,12 @@ public class Ejer1 {
 		boolean n7=true;
 		char n=',';
 		
-//Visualización de las variables separadas por comas, utilizando un char como coma.
+//Visualizacion de las variables separadas por comas, utilizando un char como coma.
 		
 	System.out.println("Valores de las variables "+n1+n+n2+n+n3+n+n4+n+n5+n+n6+n+n7);
 	System.out.println();
 	
-//Visualización de los datos en una columna
+//Visualizacion de los datos en una columna
 	System.out.println(n1);
 	System.out.println(n2);
 	System.out.println(n3);
@@ -36,6 +36,7 @@ public class Ejer1 {
 	System.out.println(n6);
 	System.out.println(n7);
 	System.out.println(n);
+	System.out.println();
 		
 //Declarar variable con numeros negativos e introducir valores superiores para prueba
 	//byte n11=130; // Nos recomiendo escribir byte n11=(byte) 130;o cambiar a int
@@ -45,7 +46,16 @@ public class Ejer1 {
 	
 	
 	System.out.print(n12);
-	System.out.print(n14);
+	System.out.println(n14);
+	System.out.println();
+	
+	
+	
+//Declarar varias variable sen una sola linea
+	int n20=700, n21=-134, n22=892, n23=1000;
+	
+	System.out.println(n20+" "+n21+" "+n22+" "+n23);
+	System.out.println();
 	
 	}
 

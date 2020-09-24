@@ -94,6 +94,10 @@ public class TiposDeDatos {
 		
 		resultado=n1%n2;
 		System.out.println("El resultado es: "+resultado);
+		
+		
+		
+//-------------------------------------------------------------------------------------------------
 	
 		
 		
