@@ -42,6 +42,15 @@ public class TiposDeDatos {
 		//declarar constante
 		final float PI=3.14f;
 		
+		//Ejemplo de casting
+		byte v5=5;
+		float v1=3.6f, v2=5.5f;
+		v5=(byte) (v1+v2); //necesario hacer cast, antes estaba escrito cast v5=v1+v2; pero esto pierde informacion
+		
+		float g5=5;
+		float g1=3.6f, g2=5.5f;
+		g5=(int)g1+(int)g2;		
+		
 //-------------------------------------------------------------------------------------------------------		
 		
 		
@@ -95,10 +104,13 @@ public class TiposDeDatos {
 		resultado=n1%n2;
 		System.out.println("El resultado es: "+resultado);
 		
+
 		
 		
 //-------------------------------------------------------------------------------------------------
-	
+
+		
+		
 		
 		
 		
@@ -108,6 +120,10 @@ public class TiposDeDatos {
 		edad=20;
 		System.out.println(edad);
 		//pi=3.15f; no se puede cambiar una constante
+		
+		
+		System.out.println(v5);
+		System.out.println(g5);
 		
 		
 		

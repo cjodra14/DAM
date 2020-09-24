@@ -39,7 +39,7 @@ public class Ejer1 {
 	System.out.println();
 		
 //Declarar variable con numeros negativos e introducir valores superiores para prueba
-	//byte n11=130; // Nos recomiendo escribir byte n11=(byte) 130;o cambiar a int
+	//byte n11=130; // Nos recomienda hacer casting qeu es lo siguiente --> byte n11=(byte) 130;o cambiar a int
 	short n12=-32768;
 	//int n13=-2147483650; //Indica que esta fuera de rango
 	long n14=-4946512885646L;
@@ -51,11 +51,97 @@ public class Ejer1 {
 	
 	
 	
-//Declarar varias variable sen una sola linea
+//Declarar varias variables en una sola linea
 	int n20=700, n21=-134, n22=892, n23=1000;
 	
 	System.out.println(n20+" "+n21+" "+n22+" "+n23);
 	System.out.println();
+	
+	
+// Visualizar constantes
+	final byte CONST1=2;
+	final int CONST2=2000;
+	final double CONST3=7.589d;
+	
+	
+	
+	System.out.println("Visualizar las constantes: "+CONST1+" , "+CONST2+ " , "+CONST3);
+	System.out.println("");
+	
+	
+	
+//Declarar e inicializar 
+
+	int var1=12, var2=15;
+	long var3=76649L, var4=-5624L;
+	float var5=8.493f, var6=23f;
+	char var7='€', var8='d';
+	
+	
+	System.out.println("El valor de la primera variable es: "+var1);
+	System.out.println("El valor de la segunda variable es: "+var2);
+	System.out.println("El valor de la tercera variable es: "+var3+" y el valor de la cuarta es: "+var4);
+	System.out.println("El valor de la cuarta variable es: "+var4+", el valor de la quinta es: "+var5);	
+	System.out.println("El valor de la sexta variable es: "+var6+" y el valor de la septima es: "+var7);
+	System.out.println();
+	
+	
+	
+//Ejercicio 10
+	int x=6, y=4;
+	int resultado1, resultado2, resultado3;
+	float resultado4;
+
+	resultado1=x-y;
+	resultado2=x*y;
+	resultado3=x/y;
+
+	System.out.println("x-y="+resultado1);
+	System.out.println("x*y="+resultado2);
+	System.out.println("x/y="+resultado3);
+	
+	resultado1=x%y;
+	System.out.println("x%y="+resultado1);
+	
+	float a=12.5f, b=7f;
+	resultado4=a/b;
+	System.out.println("a/b="+resultado4);
+	System.out.println();
+	
+	
+	
+	
+//Ejercicio 11
+	double pesoKG=1d;
+	final double OZ_AU=400d;
+	final double OZ=32.5d, KG=1d;
+	final double EUR=0.86d, USD=1d;
+	
+	double pesoOZ, precioOZ, precioOZ_EUR;
+	
+	pesoOZ=pesoKG/OZ;
+	
+	precioOZ_EUR=OZ_AU*EUR;
+	
+	
+	System.out.println("Precio 1kg AU en USD:"+"$");
+	System.out.println("Precio onza en EUR"+precioOZ_EUR);
+	System.out.println(pesoOZ);
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+			
+	
 	
 	}
 
