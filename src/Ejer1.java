@@ -192,6 +192,46 @@ public class Ejer1 {
 	System.out.println(opRes);
 	System.out.println();
 	
+	//Ejercicio 19
+	
+	System.out.println("resultados del ejercicio 19");
+	System.out.println();
+	int c=7, j=12;
+	c+=j;
+	System.out.println(c);
+	c-=j;
+	System.out.println(c);
+	c*=j;
+	System.out.println(c);
+	c/=j;
+	System.out.println(c);
+	c%=j;
+	System.out.println(c);
+	System.out.println();
+	
+//Ejercicio 20
+	double valor1=0.15d, valor2=7.12d;
+	System.out.println("El primer valor antes de cambiar es: "+valor1+" y el segundo es: "+valor2);
+	valor1=++valor1;
+	valor2=--valor2;
+	System.out.println("El primer valor despues de cambiar es: "+valor1+" y el segundo es: "+valor2);
+	System.out.println();
+	
+	
+//ejercicio21-22
+	double prom1=7d, prom2=5d, prom3=9d, exFin=8d, trFin=10d, notaFin;
+	//Funcion que calcula la nota  final, si se cmabian los valores de las variables anteriores, cambia la nota
+	notaFin=((prom1+prom2+prom3)/3)*0.55+exFin*0.3+trFin*0.15;
+	System.out.println("La nota final es: "+notaFin);
+	System.out.println();
+	
+//Ejercicio 23
+	int seg=1, min, hora;
+	hora=seg/3600;
+	min=(seg-hora*3600)/60;
+	seg=seg-(hora*3600+min*60);
+	
+	System.out.println(hora+":"+min+":"+seg);
 	
 	
 	
@@ -199,12 +239,6 @@ public class Ejer1 {
 	
 	
 	
-	
-	
-	
-	
-
-			
 	
 	
 	}
