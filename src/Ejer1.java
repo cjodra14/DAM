@@ -226,13 +226,21 @@ public class Ejer1 {
 	System.out.println();
 	
 //Ejercicio 23
-	int seg=1, min, hora;
+	int seg=15, min, hora;
 	hora=seg/3600;
 	min=(seg-hora*3600)/60;
 	seg=seg-(hora*3600+min*60);
 	
 	System.out.println(hora+":"+min+":"+seg);
 	
+	
+	
+//Pruebas del printf
+	
+	final double precio1=2.6d;
+	
+	System.out.print("El precio total a pagar es: ");
+	System.out.printf("%4.2f",precio1);
 	
 	
 	
