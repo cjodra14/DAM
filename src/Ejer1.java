@@ -75,7 +75,7 @@ public class Ejer1 {
 	int var1=12, var2=15;
 	long var3=76649L, var4=-5624L;
 	float var5=8.493f, var6=23f;
-	char var7='�', var8='d';
+	char var7='a', var8='d';
 	
 	
 	System.out.println("El valor de la primera variable es: "+var1);
@@ -133,11 +133,13 @@ public class Ejer1 {
 	float vaso1=0.12f, vaso2=0.18f, vaso3=0.17f, totalLitros;
 	totalLitros=vaso1+vaso2+vaso3;
 	System.out.println("En total hay:"+totalLitros+"litros");
+	System.out.println();
 	
 //Ejercicio 13
 	int pant=30, cami=11, totalPantCami;
 	totalPantCami=(pant*2)+(cami);
 	System.out.println("El total a pagar es:"+totalPantCami);
+	System.out.println();
 	
 	
 //Ejercicio 14
@@ -146,9 +148,49 @@ public class Ejer1 {
 	perimetro1=LADO*4;
 	area1=LADO*LADO;
 	
-	System.out.println("El perimetro es:"+perimetro1+ "y el area es"+area1);
+	System.out.println("El perimetro es:"+perimetro1+ " cm y el area es: "+area1+" cm^2");
+	System.out.println();
+	
+
+//Ejercicio 15
+	final int BASE=10, ALT=6;
+	int area2, perimetro2;
+	perimetro2=2*BASE+2*ALT;
+	area2=BASE*ALT;
+	
+	System.out.println("El perimetro es:"+perimetro2+ " cm y el area es: "+area2+" cm^2");
+	System.out.println();
+	
+//Ejercicio 16
+	int ejer16_1=25, ejer16_2=5;
+	final int EJER16_3=2;
+	int ejer16Res1, ejer16Res2, ejer16Res3;
+	
+	ejer16Res1=ejer16_1%ejer16_2;
+	//ejer16Res2=ejer16_1%"ah/jla"; da error de sintaxis
+	ejer16Res3=ejer16_1%EJER16_3;
+	System.out.println(ejer16Res1+"     "+ejer16Res3);
+	System.out.println();
 	
 	
+//Ejercicio 17
+	int op=15, opRes;
+	op=++op;
+	System.out.println(op);
+	op=++op;
+	System.out.println(op);
+	op=++op;
+	System.out.println(op);
+	System.out.println();
+	
+//Ejercicio 18
+	opRes=--op;
+	System.out.println(opRes);
+	opRes=--opRes;
+	System.out.println(opRes);
+	opRes=--opRes;
+	System.out.println(opRes);
+	System.out.println();
 	
 	
 	
