@@ -140,6 +140,15 @@ public class Ejer1 {
 	System.out.println("El total a pagar es:"+totalPantCami);
 	
 	
+//Ejercicio 14
+	final int LADO=5;
+	int area1, perimetro1;
+	perimetro1=LADO*4;
+	area1=LADO*LADO;
+	
+	System.out.println("El perimetro es:"+perimetro1+ "y el area es"+area1);
+	
+	
 	
 	
 	
