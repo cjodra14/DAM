@@ -9,7 +9,10 @@ public class TiposDeDatos {
 		
 		//Declarar las variables de los datos
 		
-		//Declarar byte
+		//Solo declarar una variable
+		byte edades;
+		
+		//Declarar e incializar byte
 		byte edad=4;
 		final byte EDAD_PERSONAS=4; //<-- este es una constante
 		//declara numero mediano 

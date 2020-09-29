@@ -11,6 +11,11 @@ public class Ejer1 {
 		System.out.println("Telef: 944157298");
 		System.out.println( "Web: www.ceinmark.com");
 		System.out.println();
+		
+		
+	//También se puede escribir de la siguiente manera
+	//System.out.println("Ciclo: Desarrollo de Aplicaciones Web /n Modulo: Programacion /n Centro: Ceinmark /n Calle: Iturribide 22-24-26 /n Telef: 944157298 /n Web: www.ceinmark.com");
+		
 	
 //Ejercicios 3
 		byte n1=1;
@@ -39,7 +44,7 @@ public class Ejer1 {
 	System.out.println();
 		
 //Declarar variable con numeros negativos e introducir valores superiores para prueba
-	//byte n11=130; // Nos recomienda hacer casting qeu es lo siguiente --> byte n11=(byte) 130;o cambiar a int
+	//byte n11=130; // Nos recomienda hacer casting que es lo siguiente --> byte n11=(byte) 130;o cambiar a int
 	short n12=-32768;
 	//int n13=-2147483650; //Indica que esta fuera de rango
 	long n14=-4946512885646L;
@@ -52,11 +57,15 @@ public class Ejer1 {
 	
 	
 //Declarar varias variables en una sola linea
-	int n20=700, n21=-134, n22=892, n23=1000;
+	int n20, n21, n22, n23;
 	
+	
+	/*
+	 * 
+	 * Nos da error al visualizarlo porque no estan inicializadas
 	System.out.println(n20+" "+n21+" "+n22+" "+n23);
 	System.out.println();
-	
+	*/
 	
 // Visualizar constantes
 	final byte CONST1=2;
@@ -237,10 +246,10 @@ public class Ejer1 {
 	
 //Pruebas del printf
 	
-	final double precio1=2.6d;
+	final double PRECIO1=2.6d;
 	
 	System.out.print("El precio total a pagar es: ");
-	System.out.printf("%4.2f",precio1);
+	System.out.printf("%4.2f",PRECIO1);
 	
 	
 	
