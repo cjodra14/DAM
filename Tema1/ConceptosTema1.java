@@ -31,7 +31,14 @@ public class ConceptosTema1 {
 		System.out.println("El resultado es "+(n1+n2));
 		rdoSuma=(byte) (n1+n2);
 		
+		
+		//En este lo priemro que se hace es el cast
 		resultado=(int)f*n;
+		System.out.println(resultado);
+		
+		
+		//En este lo primero que hace es la multiplicacion
+		resultado=(int)(f*n);
 		System.out.println(resultado);
 		
 	}
