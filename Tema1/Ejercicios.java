@@ -218,10 +218,11 @@ public class Ejercicios {
 		System.out.println();
 		
 	//Ejercicio 20
-		double valor1=0.15d, valor2=7.12d;
+		int valor1=15, valor2=7, valor3;
 		System.out.println("El primer valor antes de cambiar es: "+valor1+" y el segundo es: "+valor2);
-		valor1=++valor1;
-		valor2=--valor2;
+		valor3=valor1;
+		valor1=valor2;
+		valor2=valor3;
 		System.out.println("El primer valor despues de cambiar es: "+valor1+" y el segundo es: "+valor2);
 		System.out.println();
 		
