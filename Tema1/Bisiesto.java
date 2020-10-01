@@ -6,7 +6,8 @@ public class Bisiesto {
 		// TODO Auto-generated method stub
 		Scanner teclado=new Scanner(System.in);
 		boolean bisiesto;
-		int anio, aniobis100, aniobis4, aniobis400;
+		int anio; 
+		boolean a, b, c;
 		
 		
 		
@@ -14,10 +15,10 @@ public class Bisiesto {
 		anio=teclado.nextInt();
 		bisiesto=anio%100==0?anio%400==0:anio%4==0;
 		
-		/*aniobis4=anio%4;
-		aniobis100=anio%100;
-		aniobis400=anio%400;
-		bisiesto=((aniobis4|aniobis100&aniobis400)!=1);
+		/*c=anio%4==0;
+		a=anio%100==0;
+		b=anio%400==0;
+		bisiesto=((a&&b)||(!a&&c));
 		*/
 		System.out.println(bisiesto);
 		
