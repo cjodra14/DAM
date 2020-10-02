@@ -3,7 +3,7 @@ public class EstructuraIf {
 
 public static void main(String[] args) {
 		
-		int numero;
+		byte numero;
 		
 		
 		numero=27;
