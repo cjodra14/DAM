@@ -2,7 +2,7 @@
 public class EjercicioIfNatacion {
 
 	public static void main(String[] args) {
-		byte edad=22, lugarCurso, lugarResidencia;
+		byte edad=10, lugarCurso, lugarResidencia;
 		boolean cursoYaRealizado;
 		
 		
