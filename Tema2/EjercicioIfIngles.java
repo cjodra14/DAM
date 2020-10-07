@@ -14,6 +14,8 @@ public class EjercicioIfIngles {
 		//Declaracion de variables
 		byte dd, mm, aprobados, suspensos, asistencia, faltas, alumnos, coste;
 		
+		System.out.println("Hola");
+		
 		
 	}
 
