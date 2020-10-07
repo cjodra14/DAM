@@ -24,9 +24,6 @@ public class EjercicioIfConducir {
 					System.out.println("PUEDES TENER PERMISO DE CONDUCCIÓN");
 					
 				}
-				else {
-					
-				}
 			}
 			else {
 				System.out.println("Teclee su edad:");
@@ -35,9 +32,7 @@ public class EjercicioIfConducir {
 					System.out.println("PUEDES TENER PERMISO DE CONDUCCIÓN");
 					
 				}
-				else {
-					
-				}
+
 			}
 		}
 		else {
@@ -50,11 +45,7 @@ public class EjercicioIfConducir {
 					System.out.println("PUEDES TENER PERMISO DE CONDUCCIÓN");
 					
 				}
-				else {
-					
-				}
-			}
-			else {
+				
 				
 			}
 			
