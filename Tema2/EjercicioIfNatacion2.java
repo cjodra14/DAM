@@ -3,7 +3,7 @@ public class EjercicioIfNatacion2 {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		byte edad=22, lCurso, lRes;
+		byte edad=16, lCurso, lRes;
 		boolean cursoYaRealizado;
 		
 		

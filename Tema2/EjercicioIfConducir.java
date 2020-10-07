@@ -7,12 +7,13 @@ public class EjercicioIfConducir {
 		Scanner teclado=new Scanner(System.in);
 		byte edad;
 		int cc, mma;
-		char tipoVehic='m';
+		char tipoVehic;
 		
 		
 		
 //-----------------------------------------
-		System.out.println("¿Para que vehiculo quieres obtener el permiso?(a para coche, m para moto)");
+		System.out.println("¿Para que vehiculo quieres obtener el permiso?(a para coche, m para moto)?");
+		tipoVehic=teclado.next().charAt(0);
 		if(tipoVehic=='m') {
 			System.out.println("¿Cuantos cc tiene la moto que desea conducir?");
 			cc=teclado.nextInt();
