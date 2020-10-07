@@ -7,20 +7,43 @@ public class EjercicioIfConducir {
 		Scanner teclado=new Scanner(System.in);
 		byte edad;
 		int cc, mma;
-		char tipoVehic='a';
+		char tipoVehic='m';
 		
 		
 		
 //-----------------------------------------
-		System.out.println("¿Para que vehiculo quieres obtener el permiso?(a para coche, m para moto");
+		System.out.println("¿Para que vehiculo quieres obtener el permiso?(a para coche, m para moto)");
 		if(tipoVehic=='m') {
-			
+			System.out.println("¿Cuantos cc tiene la moto que desea conducir?");
+			cc=teclado.nextInt();
+			if(cc>125) {
+				System.out.println("Teclee su edad:");
+				edad=teclado.nextByte(); 
+				if(edad>=18) {
+					System.out.println("PUEDES TENER PERMISO DE CONDUCCIÓN");
+					
+				}
+				else {
+					
+				}
+			}
+			else {
+				System.out.println("Teclee su edad:");
+				edad=teclado.nextByte(); 
+				if(edad>=16) {
+					System.out.println("PUEDES TENER PERMISO DE CONDUCCIÓN");
+					
+				}
+				else {
+					
+				}
+			}
 		}
 		else {
 			System.out.println("¿Cual es la mma del automovil que desea conducir?");
 			mma=teclado.nextInt();
 			if(mma<3500) {
-				System.out.println("Tecelee su edad:");
+				System.out.println("Teclee su edad:");
 				edad=teclado.nextByte(); 
 				if(edad>=18) {
 					System.out.println("PUEDES TENER PERMISO DE CONDUCCIÓN");
