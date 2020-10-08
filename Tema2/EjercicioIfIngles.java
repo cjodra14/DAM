@@ -171,7 +171,7 @@ public class EjercicioIfIngles {
 				
 				
 //---------------------------------------------------------------------------------------------//
-//			Debajo de esto tenemos los casos que dan error al introducir la fecha	//
+//			Debajo de esto tenemos los casos que dan error al introducir la fecha			   //
 //---------------------------------------------------------------------------------------------//
 				else {
 					

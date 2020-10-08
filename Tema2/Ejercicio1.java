@@ -16,10 +16,7 @@ public class Ejercicio1 {
 		else if(numero<0) {
 			System.out.println("El numero "+numero+" es negativo");
 		}
-		else {
-			System.out.println("El numero es nulo");
-		}
-		
+			
 	}
 
 }
