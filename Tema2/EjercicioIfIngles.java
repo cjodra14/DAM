@@ -1,12 +1,12 @@
 //////////////////////////////////////////////////////////////////////////////////////////
-//																						//
-//  -->	que dia sea igual a lunes, martes, miercoles, jueves o viernes					//
-//	-->	que dd esté entre 1 y 31														//
-//	-->	que mm esté entr 1 y 12															//
-//	-->	si es l, m o x sacar % de aprobados												//
-//	--> si es j comprobar si la asistencia es mayor al 50%								//
-//	--> Si es v y dd 1 y mm 1 o dd1 y mm 7 sacar coste total							//
-//																						//
+//																						||		
+//  -->	que dia sea igual a lunes, martes, miercoles, jueves o viernes					||
+//	-->	que dd esté entre 1 y 31														||
+//	-->	que mm esté entr 1 y 12															||
+//	-->	si es l, m o x sacar % de aprobados												||
+//	--> si es j comprobar si la asistencia es mayor al 50%								||
+//	--> Si es v y dd 1 y mm 1 o dd1 y mm 7 sacar coste total							||
+//																						||
 //////////////////////////////////////////////////////////////////////////////////////////
 
 import java.util.Scanner;
