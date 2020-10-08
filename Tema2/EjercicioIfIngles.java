@@ -15,8 +15,8 @@ public class EjercicioIfIngles {
 		
 		
 //Declaracion de variables
-		byte dd, mm, aprobados, suspensos, asistencia, alumnos, alumnosPracticas;
-		float total, coste, costeTotal ;
+		byte dd, mm, aprobados, suspensos, asistencia, alumnos;
+		float total, coste, asistPracticas;
 		
 //---------------------------------------------------------------------		
 		
@@ -60,6 +60,9 @@ public class EjercicioIfIngles {
 						aprobados=teclado.nextByte();
 						System.out.println("Cuantos alumnos suspendieron");
 						suspensos=teclado.nextByte();
+						
+			//--------------Caso de nivel Inicial-----------------											
+						
 						if(dia.equals(l)) {
 							System.out.println("En el nivel Inicial");
 							System.out.println("Hubo "+aprobados+" aprobados");
@@ -68,6 +71,9 @@ public class EjercicioIfIngles {
 							System.out.println("Lo que es el % "+total+" de aprobados");
 							
 						}
+						
+			//---------------Caso de nivel Intermedio---------------------------
+						
 						else if(dia.equals(m)) {
 							System.out.println("En el nivel Intermedio");
 							System.out.println("Hubo "+aprobados+" aprobados");
@@ -75,6 +81,10 @@ public class EjercicioIfIngles {
 							total=(((float)aprobados/((float)aprobados+(float)suspensos))*100);
 							System.out.println("Lo que es el % "+total+" de aprobados");
 						}
+						
+						
+			//------------------Caso de nivel Avanzado-------------			
+						
 						else {
 							System.out.println("En el nivel Avanzado");
 							System.out.println("Hubo "+aprobados+" aprobados");
@@ -93,12 +103,38 @@ public class EjercicioIfIngles {
 						
 					}
 //------------------------------------Practica Hablada------------------------	
+					
 					else {
 						
 						if(dia.equals(j)) {//Si no habia clase de nivel comprueba si era practica hablada
 							System.out.println("Hay practica hablada");
 							
+							//Asignacion de los datos
+							System.out.println("¿Cuantos alumnos hay apuntados?");
+							alumnos=teclado.nextByte();
+							System.out.println("¿Cuantos alumnos han asistido?");
+							asistencia=teclado.nextByte();
+							
+							//calculo del % de asistencia
+							asistPracticas=(((float)asistencia/((float)alumnos))*100);
+							
+							if(alumnos>=asistencia) {//Evitar errores de poner mas asistencia que alumnos
+								
+							//Si hay mas del 50% asistio la mayoria, si no, no asistio la mayoria
+							if(asistPracticas>50) {
+								System.out.println("Asistió la mayoria");
+							}
+							else {
+								System.out.println("No asistió la mayoria");
+							}
+							}
+							else {
+								System.out.println("Se han introducido mal los datos, hay mas asistencia que alumnos");
+							}
+							
+													
 						}
+						
 //---------------------------------Clase de ingles para viajeros-----------------------
 						
 						else { //Si no era tampoco practica hablada es ingles para viajeros
@@ -107,6 +143,11 @@ public class EjercicioIfIngles {
 						//Comprobación de si comienza el nuevo curso
 							if((dd==1&&mm==1)|(dd==1&&mm==7)) {
 								System.out.println("Comienzo de nuevo ciclo");
+								System.out.println("Introduce cuantos alumnos se han apuntado:");
+								total=teclado.nextFloat();
+								System.out.println("Introducir coste por alumno:");
+								coste=teclado.nextFloat();
+								System.out.println("El coste total del curso son "+(total*coste)+"€");
 							}
 							else {
 								System.out.println("El curso ya está comenzado");
