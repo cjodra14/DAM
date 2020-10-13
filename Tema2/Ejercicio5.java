@@ -42,7 +42,7 @@ public class Ejercicio5 {
 				
 			}
 		}
-
+		src.close();
 	}
 
 }
