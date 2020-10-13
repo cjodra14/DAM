@@ -19,17 +19,17 @@ public class Ejercicio2 {
 		else{
 			if(n1<=n2) {
 				System.out.println(n1-n2);
-				if(n2>n3) {
-					System.out.println(n2*n3);
-				}
-				else {
-					System.out.println(n2/n3);
-					
-				}
+				
 			}
 	
 		}
-	
+		if(n2>n3) {
+			System.out.println(n2*n3);
+		}
+		else {
+			System.out.println(n2/n3);
+			
+		}
 
 
 	}
