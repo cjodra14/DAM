@@ -31,8 +31,14 @@ public class Ejercicio5 {
 					System.out.println("La suma de "+n3+" y "+n4+" es: "+(n3+n4) );
 				}
 				else {
-					
+					if(n1!=n2&&n4==n5) {
+						System.out.println("La suma de "+n4+" y "+n5+" es: "+(n5+n4) );
+					}
+					else {
+						
+					}
 				}
+				
 				
 			}
 		}
