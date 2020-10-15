@@ -4,7 +4,8 @@ public class Ejercicio7Swich {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		Scanner src=new Scanner(System.in);
-		byte dia, mes;
+		int dia, mes;
+		String zodiaco=new String("");
 		
 		System.out.println("Introduce el dia numericamente");
 		dia=src.nextByte();
@@ -17,44 +18,52 @@ public class Ejercicio7Swich {
 			if(1<=mes&&mes<=12) { //Comprueba que el mes introducido este entre el 1 y el 12
 				
 				switch(mes) {
-				case '1' :
-					System.out.println("el resultado de la suma es: ");
+				case 1 :
+					zodiaco=(dia<21)?"Tu signo es Capricornio":"Tu signo es Acuario";
+					System.out.println(zodiaco);
 				break;
-				case '2':
-					System.out.println("El resultado de la resta es: ");
+				case 2:
+					zodiaco=(dia<20)?"Tu signo es Acuario":"Tu signo es Piscis";
+					System.out.println(zodiaco);
 				break;
-				case '3':
-					System.out.println("El resultado de la multiplicacion es:");
+				case 3:
+					zodiaco=(dia<21)?"Tu signo es Piscis":"Tu signo es Aries";
+					System.out.println(zodiaco);
 				break;
-				case '4':
-					System.out.println("El resultado de la división es: ");
+				case 4:
+					zodiaco=(dia<21)?"Tu signo es Aries":"Tu signo es Tauro";
+					System.out.println(zodiaco);
 				break;
-				case '5' :
-					System.out.println("el resultado de la suma es: ");
+				case 5 :
+					zodiaco=(dia<22)?"Tu signo es Tauro":"Tu signo es Geminis";
+					System.out.println(zodiaco);
 				break;
-				case '6':
-					System.out.println("El resultado de la resta es: ");
+				case 6:
+					zodiaco=(dia<22)?"Tu signo es Geminis":"Tu signo es Cancer";
+					System.out.println(zodiaco);
 				break;
-				case '7':
-					System.out.println("El resultado de la multiplicacion es:");
+				case 7:
+					zodiaco=(dia<24)?"Tu signo es Cancer":"Tu signo es Leo";
+					System.out.println(zodiaco);
 				break;
-				case '8':
-					System.out.println("El resultado de la división es: ");
+				case 8:
+					zodiaco=(dia<223)?"Tu signo es Leo":"Tu signo es Virgo";
+					System.out.println(zodiaco);
 				break;
-				case '9' :
-					System.out.println("el resultado de la suma es: ");
+				case 9 :
+					zodiaco=(dia<24)?"Tu signo es Virgo":"Tu signo es Libra";
+					System.out.println(zodiaco);
 				break;
-				case '15':
-					System.out.println("El resultado de la resta es: ");
+				case 10:
+					zodiaco=(dia<24)?"Tu signo es Libra":"Tu signo es Escorpio";
+					System.out.println(zodiaco);
 				break;
-				case '11':
-					System.out.println("El resultado de la multiplicacion es:");
+				case 11:
+					zodiaco=(dia<23)?"Tu signo es Escorpio":"Tu signo es Sagitario";
+					System.out.println(zodiaco);
 				break;
-				case '12':
-					System.out.println("El resultado de la división es: ");
-				break;
-				
 				default :
+					System.out.println("Tu signo es Sagitario");
 			}
 			
 				
