@@ -11,35 +11,30 @@ public class Ejercicio9 {
 		
 		switch(numero) {
 		case 1:
-			System.out.println("1,2,3,4,5,6,7,8,9,10");
-		break;
+			System.out.println("1 ");
 		case 2:
-			System.out.println("2,3,4,5,6,7,8,9,10");
-		break;
+			System.out.println("2 ");
 		case 3:
-			System.out.println("3,4,5,6,7,8,9,10");
-		break;
+			System.out.println("3 ");
 		case 4:
-			System.out.println("4,5,6,7,8,9,10");
-		break;
+			System.out.println("4 ");
 		case 5:
-			System.out.println("5,6,7,8,9,10");
-		break;
+			System.out.println("5 ");
+
 		case 6:
-			System.out.println("6,7,8,9,10");
-		break;
+			System.out.println("6 ");
+
 		case 7:
-			System.out.println("7,8,9,10");
-		break;
+			System.out.println("7 ");
+		
 		case 8:
-			System.out.println("8,9,10");
-		break;
+			System.out.println("8 ");
+	
 		case 9:
-			System.out.println("9,10");
-		break;
+			System.out.println("9 ");
 		case 10:
 			System.out.println("10");
-		break;
+			break;
 		default:
 			System.out.println("El numero es mayor a 10");
 		break;
