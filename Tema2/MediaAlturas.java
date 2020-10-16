@@ -17,6 +17,7 @@ public class MediaAlturas {
 		System.out.printf("%4.2f",media);
 		
 		
+		
 
 	}
 
