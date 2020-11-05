@@ -4,7 +4,7 @@ public class Ejer20 {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		Scanner src=new Scanner(System.in);
-		 double numero, baseIni, baseFin, suma;
+		 int numero, baseIni, baseFin, suma;
 		 String convertido="";
 		 
 		 System.out.println("Introduza el numero que desea convertir:");
