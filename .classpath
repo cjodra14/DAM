@@ -10,5 +10,6 @@
 	<classpathentry kind="src" path="Tema2"/>
 	<classpathentry kind="src" path="Tema3"/>
 	<classpathentry kind="src" path="coches"/>
+	<classpathentry kind="src" path="Tema4"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
