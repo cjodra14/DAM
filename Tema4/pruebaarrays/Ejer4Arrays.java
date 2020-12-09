@@ -9,6 +9,7 @@ public class Ejer4Arrays {
 		
 	}
 	
+	//metodo que coloca numeros aleatoriamente del 0 al 100  
 	void rellenar() {
 		for(int n=0;n<i.length;n++) {
 			i[n]=((Math.random())*101);
