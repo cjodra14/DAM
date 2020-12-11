@@ -16,7 +16,7 @@ public class Ejer6Arrays {
 	  Ejer6Arrays(){
 		  System.out.println("Teclea la longitud deseada para el array");
 			longitud=src.nextInt();
-			array=new int[longitud];
+			
 	  }
 	  
 	 
@@ -33,6 +33,14 @@ public class Ejer6Arrays {
 		  return min;
 	  }
 	  
+	  
+	  
+	  void rellenar(int max) {
+		  array=new int[longitud];
+		  for(int i=0;i<array.length;i++) {
+			  array[i]=max+i+1;
+		  }
+	  }
 	  int numAleatorio(int minimo, int maximo) {
 	    	int num=(int)(Math.random()*(minimo-maximo+1)+(maximo));
 	    	return num;
@@ -108,6 +116,7 @@ public class Ejer6Arrays {
 	    	Ejer6Arrays ob=new Ejer6Arrays();
 	    	max=ob.numMax();
 	    	min=ob.numMin();
+	    	ob.rellenar(max);
 	    	comprobado=ob.comprobacion(max, min);
 	    	ob.generar(comprobado, max, min);
 	    	ob.visu(comprobado);
