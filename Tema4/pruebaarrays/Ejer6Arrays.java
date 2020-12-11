@@ -34,7 +34,7 @@ public class Ejer6Arrays {
 	  }
 	  
 	  int numAleatorio(int minimo, int maximo) {
-	    	int num=(int)Math.floor(Math.random()*(minimo-maximo+1)+(maximo));
+	    	int num=(int)(Math.random()*(minimo-maximo+1)+(maximo));
 	    	return num;
 	    } 
 	  
@@ -61,6 +61,7 @@ public class Ejer6Arrays {
 			  int numero_elementos=0;
 			  boolean encontrado;
 			  int aleatorio;
+			  int alberto=0;
 			  
 			  
 			  while(numero_elementos<longitud) {
@@ -70,9 +71,14 @@ public class Ejer6Arrays {
 				  encontrado=false;
 				  
 				  for(int i=0;i<array.length && !encontrado;i++) {
-					  if(aleatorio==array[i]) {
+					  if(aleatorio==array[i]) { // cuando es 0 nos pone que ya existe el numero, ya que el valor null es 0
+						  
 						  encontrado=true;
 					  }
+//					  if( encontrado && aleatorio==0 && alberto<1) {
+//						  encontrado=false;
+//						  alberto++;
+//					  }
 				  }
 				  if(encontrado) {
 					  System.out.println("El numero "+aleatorio+" ya existe ");
@@ -85,12 +91,13 @@ public class Ejer6Arrays {
 			  
 		  }
 	  }
-	  void visu() {
+	  void visu(boolean comprobado) {
+		  if(comprobado) {
 		  System.out.println();
 		  System.out.println("El array completo es:");
 		  for(int i=0;i<array.length;i++) {
 			  System.out.println(array[i]);
-		  }
+		  }}
 		  
 	  }
 	  
@@ -103,7 +110,7 @@ public class Ejer6Arrays {
 	    	min=ob.numMin();
 	    	comprobado=ob.comprobacion(max, min);
 	    	ob.generar(comprobado, max, min);
-	    	ob.visu();
+	    	ob.visu(comprobado);
 	
 	    }
 
