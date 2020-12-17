@@ -39,26 +39,31 @@ public class TestArrayBidimensional {
 		
 		void multiplicar(int elementos) {
 			int multiplicacion=1;
-			boolean finalizar=false;
+			boolean fin=false;
 			//int x=elementos/b;
 			int i=a;
-			int cont=0, primerfor=1;
+			int w=b;
+			int cont=0, primerfor=1, segundofor=1;
 			
 			if(elementos>(a*b)){
 				System.out.println("No es posible, hay mas elementos que numeros");
 			}else {
 			
 			
-				for(int z=0;z<i;z++) {
+				for(int z=0;z<i && !fin;z++) {
 					System.out.println("Ha pasado por aqui por "+primerfor+" vez");
-					for(int t=0;t<b;t++) {
+					for(int t=0;t<w && !fin;t++) {
 						if(cont<elementos) {
 						multiplicacion=multiplicacion*matriz[z][t];
 						cont++;}
 						else {
-							i=0;
+							fin=true;
+							//i=0;
+							//w=0;
 						}
 						
+						System.out.println("Ha pasado por aqui por el segundo for por "+segundofor+" vez");
+						segundofor++;
 					}
 					primerfor++;
 			}
@@ -68,9 +73,9 @@ public class TestArrayBidimensional {
 		
 		void verDiagonal() {
 			for(int x=0;x<matriz.length;x++) {
-				for(int i=x;i==x;i++) {
-					System.out.println(matriz[x][i]);
-				}
+				//for(int i=x;i==x;i++) {
+					System.out.println(matriz[x][x]);
+				//}
 			}
 			
 		}
@@ -82,7 +87,7 @@ public class TestArrayBidimensional {
 		//obj.teclear();
 		obj.visu();
 		suma=obj.suma();
-		obj.multiplicar(4);
+		obj.multiplicar(3);
 		obj.verSuma(suma);
 		obj.verDiagonal();
 
