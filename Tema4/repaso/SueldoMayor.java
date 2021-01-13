@@ -1,15 +1,18 @@
 package repaso;
-
 import java.util.Scanner;
 class SueldoMayor {
+
 	
 
+
 	    SueldoMayor() {
+
 	        
 	        
 	    }
 	    
-	    public void mayorSueldo(String nombre, float sueldo) {
+	    
+	    public void mayorSueldo(String[]nombres,float[] sueldos) {
 	        float mayor=Float.MIN_VALUE;// constantes MAX_VALUE y MIN_VALUE
 	        int pos=0;	            
 	        for(int f=0;f<nombres.length;f++) {
@@ -23,22 +26,20 @@ class SueldoMayor {
 	    }
 	    
 	    public static void main(String[] ar) {
-
-		     Scanner teclado=new Scanner(System.in);
-		     String[] nombres=new String[5];
-		     float[] sueldos=new float[5];
-		     for(int f=0;f<nombres.length;f++) {
-		            System.out.print("Teclear el nombre del empleado:");
-		            nombres[f]=teclado.nextLine();
-		            System.out.print("Teclear el sueldo:");
-		            sueldos[f]=teclado.nextFloat();
-		            teclado.nextLine();
-		        }
-
-	      SueldoMayor obj=new SueldoMayor();
-	      obj.mayorSueldo(nombres,sueldos);
+	    	String[] nombres={"Juan","Pedro","Marcos","Andrea","Ana"};
+	    	float[] sueldos={1F,2F,3F,4F,5F};
+		    	
+		    	
+		      SueldoMayor obj=new SueldoMayor();
+		      obj.mayorSueldo(nombres, sueldos);
 	    }
 	}
+
+
+	   
+		     
+
+	      
 
 /*
 import java.util.Scanner;
@@ -89,7 +90,7 @@ class SueldoMayor {
 	    }
 	    
 	    
-	    public static void main(String[] ar) {
+	    public static void main(String[] args) {
 	    	 Scanner src=new Scanner(System.in);
 	    	int longitud=0;
 	    	 System.out.print("Teclear cuantos empelado hay");
