@@ -7,6 +7,7 @@ public class tipoCola {
 		Nodo sig;		
 	}
 	Nodo raiz, ant;
+	
 
 	public tipoCola() {
 		raiz=null; //a quien le toca

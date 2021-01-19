@@ -11,7 +11,7 @@ public class ArraysBiAlumnos {
 			longitud=src.nextInt();src.nextLine();
 			
 	}
-			void alumnos() {
+	void alumnos() {
 				  alumnos=new String[longitud];
 				  for(int i=0;i<alumnos.length;i++) {
 					  System.out.println("Como se llama el alumno: ");
