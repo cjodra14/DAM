@@ -1,6 +1,5 @@
 package memoriadinamica;
 
-import memoriadinamica.tipoCola.Nodo;
 
 public class FifoAlumnos {
 	class Alumno{
@@ -10,9 +9,13 @@ public class FifoAlumnos {
 		String apel2;
 		char prov;
 		Alumno sig;
-		Alumno sigG;
-		Alumno sigB;
+		//Alumno sigG;
+		//Alumno sigB;
 		
+	}
+	class Indice{
+		Alumno a;
+		Indice b;
 	}
 	Alumno raizT, antT, raizB, antB, raizG, antG ;
 	public FifoAlumnos() {

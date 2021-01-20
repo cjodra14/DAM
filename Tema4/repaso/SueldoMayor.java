@@ -12,26 +12,54 @@ class SueldoMayor {
 	    }
 	    
 	    
-	    public void mayorSueldo(String[]nombres,float[] sueldos) {
+	    String mayorSueldo(String[]nombres,float[] sueldos) {
 	        float mayor=Float.MIN_VALUE;// constantes MAX_VALUE y MIN_VALUE
+	        String mayorNombre=null;
 	        int pos=0;	            
 	        for(int f=0;f<nombres.length;f++) {
 	            if (sueldos[f]>mayor) {
 	                mayor=sueldos[f];
+	                mayorNombre=nombres[f];
 	                pos=f;
 	            }
 	        }
-	        System.out.println("El empleado con sueldo mayor es "+nombres[pos]);
-	        System.out.println("Tiene un sueldo:"+mayor);
+	        return mayorNombre;
+	    }
+	    public void visu(String nombre) {
+	    	System.out.println("El empleado con sueldo mayor es "+nombre);
 	    }
 	    
 	    public static void main(String[] ar) {
 	    	String[] nombres={"Juan","Pedro","Marcos","Andrea","Ana"};
 	    	float[] sueldos={1F,2F,3F,4F,5F};
+	    	String nombre=null;
 		    	
 		    	
-		      SueldoMayor obj=new SueldoMayor();
-		      obj.mayorSueldo(nombres, sueldos);
+		      //SueldoMayor obj=new SueldoMayor();
+		     // nombre=obj.mayorSueldo(nombres, sueldos);
+		      //obj.visu(nombre);
+	    	  int serie,cont,a;
+		    	serie=0;
+		    	while(serie<9){
+		    		cont=serie;
+		    		while(cont>0){
+		    			System.out.print(" ");
+		    			cont=cont-1;
+		    		}
+		    		for(cont=1;cont<=serie;cont++){
+		    			System.out.print("Y");
+		    			
+		    		}
+		    		cont=8-serie;
+		    		while(cont>0){
+		    			System.out.print("X");
+		    			cont=cont-1;
+		    			
+		    		}
+		    		System.out.println();
+		    		serie++;
+		    	}
+		      
 	    }
 	}
 
