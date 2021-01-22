@@ -1,5 +1,7 @@
 package Strings;
 import java.util.Scanner;
+
+import com.sun.tools.javac.util.StringUtils;
 public class EjerStrings2 {
 	Scanner src=new Scanner(System.in);
 	String cadena1;
@@ -70,13 +72,35 @@ public class EjerStrings2 {
 	}
 	
 	void capicua() {
-		char aux1, aux2;
-		for(int contador=0;contador<cadena1.length();contador++) {
-			
-		}
-		
-		
-	}
+		 String x = cadena1;
+		    int s = x.length();
+		    int z = s / 2;
+		    char k;
+		    char m;
+		    int p=0;
+		    boolean comprueba=true;
+		    
+
+		        for (int j = (s - 1); j>z && p<z ; j--) {
+
+		            k = x.charAt(p);
+		            m = x.charAt(j);
+
+		      System.out.println(k+" "+m );   
+
+		            if (k==m) {
+		                System.out.println("Bien.");
+		                
+		            }else {
+		            	comprueba=false;
+		            }
+		          p++;
+
+		        }
+		        if(comprueba==false) {
+		        	System.out.println("No es capicua");
+		        }
+		        }
 	
 	public static void main(String[] args) {
 		EjerStrings2 ob1=new EjerStrings2();
@@ -85,6 +109,7 @@ public class EjerStrings2 {
 		ob1.cadenaInversa();
 		ob1.guiones();
 		ob1.contarVocales();
+		ob1.capicua();
 		
 		
 	}
